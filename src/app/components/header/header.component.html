@@ -1,0 +1,57 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" routerLink="/">
+    <i class="fa fa-paw" aria-hidden="true"></i>
+    Club del Ovejero Belga
+  </a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown" routerLinkActive="active">
+        <a class="nav-link dropdown-toggle" href="" id="nosotrosLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Nosotros
+        </a>
+        <div class="dropdown-menu item-dropeable" aria-labelledby="nosotrosLink">
+          <a class="nav-link" routerLink="/comision-directiva">Comision Directiva</a>
+          <a class="nav-link" routerLink="/jueces">Jueces</a>
+        </div>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/reglamentos">Reglamentos</a>
+      </li>
+      <li class="nav-item dropdown" routerLinkActive="active">
+        <a class="nav-link dropdown-toggle" href="" id="exposicionesLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Exposiciones
+        </a>
+        <div class="dropdown-menu item-dropeable" aria-labelledby="exposicionesLink">
+          <a class="nav-link" routerLink="/exposiciones">Resultados</a>
+          <a class="nav-link" routerLink="/rankings">Rankings</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown" routerLinkActive="active">
+        <a class="nav-link dropdown-toggle" href="" id="certificacionesLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Certificaciones
+        </a>
+        <div class="dropdown-menu item-dropeable" aria-labelledby="certificacionesLink">
+          <a class="nav-link" routerLink="/certificaciones">Cert1</a>
+          <a class="nav-link" routerLink="/certificaciones">Cert2</a>
+          <a class="nav-link" routerLink="/certificaciones">Cert3</a>
+          <a class="nav-link" routerLink="/certificaciones">Cert4</a>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/criaderos">Criaderos</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/sponsors">Sponsors</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/contacto">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
