@@ -20,8 +20,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { RankingEstructuraComponent } from './components/rankings/ranking-estructura/ranking-estructura.component';
+import { RankingTrabajoComponent } from './components/rankings/ranking-trabajo/ranking-trabajo.component';
 
-
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -37,9 +39,14 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     CriaderosComponent,
     SeleccionNacionalComponent,
     HomeComponent,
-    ContactoComponent
+    ContactoComponent,
+    RankingEstructuraComponent,
+    RankingTrabajoComponent
   ],
   imports: [
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyD_5zRAcqLlfjCRet-AGERhpy7WRFNoXKA'
+    }),
     BrowserModule,
     AngularFontAwesomeModule,
     AppRoutingModule

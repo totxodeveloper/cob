@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactoComponent implements OnInit {
 
+  lat: number = -34.6120527;
+  lng: number = -58.3873432;
+
+  zoom: number = 16;
+
   constructor() { }
 
   ngOnInit() {

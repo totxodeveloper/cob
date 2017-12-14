@@ -1,3 +1,25 @@
-<p>
-  rankings works!
-</p>
+<div class="container rankings-title">
+  <h1>Rankings</h1>
+</div>
+<div class="rankings-content">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#estructura">Estructura</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#trabajo">Trabajo</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="estructura">
+      <ul class="list-group media-list media-list-stream">
+        <app-ranking-estructura></app-ranking-estructura>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade in" id="trabajo">
+      <ul class="list-group media-list media-list-stream">
+        <app-ranking-trabajo></app-ranking-trabajo>
+      </ul>
+    </div>
+  </div>
+</div>
