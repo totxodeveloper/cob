@@ -13,6 +13,9 @@ import { ReglamentosComponent } from "./components/reglamentos/reglamentos.compo
 import { SeleccionNacionalComponent } from "./components/seleccion-nacional/seleccion-nacional.component";
 import { SponsorsComponent } from "./components/sponsors/sponsors.component";
 import { ContactoComponent } from "./components/contacto/contacto.component";
+import {BhComponent} from "./components/certificaciones/bh/bh.component";
+import {IpoComponent} from "./components/certificaciones/ipo/ipo.component";
+import {MondioringComponent} from "./components/certificaciones/mondioring/mondioring.component";
 
 
 
@@ -29,6 +32,9 @@ const appRoutes: Routes = [
   { path: 'seleccion-naciona', component: SeleccionNacionalComponent },
   { path: 'sponsors', component: SponsorsComponent },
   { path: 'contacto', component: ContactoComponent },
+  { path: 'bh', component: BhComponent },
+  { path: 'ipo', component: IpoComponent },
+  { path: 'mondioring', component: MondioringComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

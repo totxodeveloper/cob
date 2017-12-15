@@ -24,6 +24,14 @@ import { RankingEstructuraComponent } from './components/rankings/ranking-estruc
 import { RankingTrabajoComponent } from './components/rankings/ranking-trabajo/ranking-trabajo.component';
 
 import { AgmCoreModule } from '@agm/core';
+import { PdfViewerModule } from "ng2-pdf-viewer";
+import { BhComponent } from './components/certificaciones/bh/bh.component';
+import { IpoComponent } from './components/certificaciones/ipo/ipo.component';
+import { MondioringComponent } from './components/certificaciones/mondioring/mondioring.component';
+import { FcaComponent } from './components/reglamentos/fca/fca.component';
+import { SelectivosMundialesComponent } from './components/reglamentos/selectivos-mundiales/selectivos-mundiales.component';
+import { TrabajoComponent } from './components/reglamentos/trabajo/trabajo.component';
+import { RankingComponent } from './components/reglamentos/ranking/ranking.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +49,14 @@ import { AgmCoreModule } from '@agm/core';
     HomeComponent,
     ContactoComponent,
     RankingEstructuraComponent,
-    RankingTrabajoComponent
+    RankingTrabajoComponent,
+    BhComponent,
+    IpoComponent,
+    MondioringComponent,
+    FcaComponent,
+    SelectivosMundialesComponent,
+    TrabajoComponent,
+    RankingComponent
   ],
   imports: [
     AgmCoreModule.forRoot({
@@ -49,7 +64,8 @@ import { AgmCoreModule } from '@agm/core';
     }),
     BrowserModule,
     AngularFontAwesomeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

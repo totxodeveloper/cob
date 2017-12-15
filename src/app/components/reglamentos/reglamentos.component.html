@@ -1,26 +1,41 @@
-<!-- Button trigger modal -->
-<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        <div style="text-align: center;">
-          <iframe src="http://www.fca2000.org.ar/images/2017/REGLAMENTO_DE_JUECES_corregido_15_de_agosto_2017.pdf"
-                  style="width:100%; height:600px;" frameborder="0"></iframe>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+<div class="container rankings-title">
+  <h1>Reglamentos</h1>
+</div>
+<div class="rankings-content">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#selectivosMundiales">Selectivos Mundiales</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#trabajo">Trabajo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#ranking">Ranking</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#fca">fca</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="selectivosMundiales">
+      <ul class="list-group media-list media-list-stream">
+        <app-selectivos-mundiales></app-selectivos-mundiales>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade in" id="trabajo">
+      <ul class="list-group media-list media-list-stream">
+        <app-trabajo></app-trabajo>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade in" id="ranking">
+      <ul class="list-group media-list media-list-stream">
+        <app-ranking></app-ranking>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade in" id="fca">
+      <ul class="list-group media-list media-list-stream">
+        <app-fca></app-fca>
+      </ul>
     </div>
   </div>
 </div>
