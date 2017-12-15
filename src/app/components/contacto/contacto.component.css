@@ -1,9 +1,14 @@
+.contacto-div {
+}
+
 agm-map {
-  height: 250px;
+  height: 350px;
 }
 .div-content {
-  height: 51vh;
+  /*height: 51vh;*/
+  padding: 250px;
 }
-.div-map {
-  height: 49vh;
+.map-content {
+  /*height: 49vh;*/
+  height: 350px;
 }

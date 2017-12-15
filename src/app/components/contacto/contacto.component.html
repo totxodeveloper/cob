@@ -1,9 +1,49 @@
-<div class="container div-content">
-</div>
+<div class="container contacto-div">
 
-<div class="div-map">
+  <br>
+  <br>
+  <br>
+
+  <div class="row">
+    <div class="col-md-6">
+        <div class="card mb-3 text-center">
+          <div class="card-block">
+            <blockquote class="card-blockquote">
+              <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
+              <footer>(0054) (011) 4381.0465 / 4381.3945</footer>
+            </blockquote>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card mb-3 text-center">
+          <div class="card-block">
+            <blockquote class="card-blockquote">
+              <i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
+              <footer>ovejerobelgaclub@hotmail.com</footer>
+            </blockquote>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="offset-md-3 col-md-6">
+      <div class="card mb-3 text-center">
+        <div class="card-block">
+          <blockquote class="card-blockquote">
+            <p>Direccion: Moreno 1325, CABA, Bs As, Argentina</p>
+            <footer>Horario de Atencion: Martes de 17:00 a 20:00 y Jueves de 16:00 a 19:00</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <hr>
+
   <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
     <agm-marker [latitude]="lat" [longitude]="lng" ></agm-marker>
   </agm-map>
-</div>
 
+</div>
