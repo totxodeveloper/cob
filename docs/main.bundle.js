@@ -1511,7 +1511,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/sponsors/sponsors.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container container-page\">\n\n  <div class=\"col-lg-8 offset-2 text-center\">\n    <h1 class=\"title-container-page\" style=\"margin-bottom: 150px;\"> Sponsors </h1>\n\n\n    <div class=\"row perro-card\">\n      <div class=\"col-4\">\n        <img class=\"img-fluid img-thumbnail image-perro\" src=\"../../../COB/assets/img/purina.jpg\">\n      </div>\n\n      <div class=\"col-md-8\">\n        <h2>Purina</h2>\n        <h4>Pro Plan</h4>\n        <hr>\n        <a href=\"https://www.purina-latam.com/ar/proplan/\" target=\"_blank\">\n          <button class=\"btn btn-outline-primary\">\n            <i class=\"fa fa-globe\" aria-hidden=\"true\"></i>\n\n          </button>\n        </a>\n      </div>\n\n\n    </div>\n\n  </div>\n</div>\n"
+module.exports = "<div class=\"container container-page\">\n\n  <div class=\"col-lg-8 offset-2 text-center\">\n    <h1 class=\"title-container-page\" style=\"margin-bottom: 150px;\"> Sponsors </h1>\n\n\n    <div class=\"row perro-card\">\n      <div class=\"col-4\">\n        <img class=\"img-fluid img-thumbnail image-perro\" src=\"../../../cob/assets/img/purina.jpg\">\n      </div>\n\n      <div class=\"col-md-8\">\n        <h2>Purina</h2>\n        <h4>Pro Plan</h4>\n        <hr>\n        <a href=\"https://www.purina-latam.com/ar/proplan/\" target=\"_blank\">\n          <button class=\"btn btn-outline-primary\">\n            <i class=\"fa fa-globe\" aria-hidden=\"true\"></i>\n\n          </button>\n        </a>\n      </div>\n\n\n    </div>\n\n  </div>\n</div>\n"
 
 /***/ }),
 
