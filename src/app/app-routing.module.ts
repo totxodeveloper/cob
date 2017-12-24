@@ -24,7 +24,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'certificaciones', component: CertificacionesComponent },
   { path: 'comision-directiva', component: ComisionDirectivaComponent },
-  { path: 'criaderos', component: CriaderosComponent },
+  { path: 'afijos', component: CriaderosComponent },
   { path: 'exposiciones', component: ExposicionesComponent },
   { path: 'jueces', component: JuecesComponent },
   { path: 'rankings', component: RankingsComponent },
