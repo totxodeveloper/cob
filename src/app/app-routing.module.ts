@@ -36,6 +36,7 @@ const appRoutes: Routes = [
   { path: 'ipo', component: IpoComponent },
   { path: 'mondioring', component: MondioringComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
+
 ];
 
 @NgModule({

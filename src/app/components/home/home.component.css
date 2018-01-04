@@ -1,18 +1,31 @@
 html body {
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
+}
+
+.content-title {
+  text-align: center;
 }
 
 .home-title {
   font-family: roboto;
-  font-size: 6em;
-  color: white;
-  font-weight: bold;
-  padding: 140px;
+  font-size: 4em;
+  padding: 60px;
+  color: #292b2d;
+}
+
+.content-img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-time-line {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .content-main {
-  height: 94.3vh;
-  background-image: url("../../../assets/img/portada.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  /*height: 94.3vh;*/
+  /*background-image: url("../../../assets/img/portada.jpg");*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
 }
