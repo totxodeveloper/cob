@@ -20,8 +20,7 @@ import {MondioringComponent} from "./components/certificaciones/mondioring/mondi
 
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'certificaciones', component: CertificacionesComponent },
   { path: 'comision-directiva', component: ComisionDirectivaComponent },
   { path: 'afijos', component: CriaderosComponent },
@@ -35,7 +34,7 @@ const appRoutes: Routes = [
   { path: 'bh', component: BhComponent },
   { path: 'ipo', component: IpoComponent },
   { path: 'mondioring', component: MondioringComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'home' }
+  { path: '**', pathMatch: 'full', redirectTo: '/' }
 
 ];
 

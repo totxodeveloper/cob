@@ -9,7 +9,13 @@ html body {
 .home-title {
   font-family: roboto;
   font-size: 4em;
-  padding: 60px;
+  padding: 35px 60px 25px 60px;
+  color: #292b2d;
+}
+
+.home-subtitle {
+  font-family: roboto;
+  margin-bottom: 40px;
   color: #292b2d;
 }
 
