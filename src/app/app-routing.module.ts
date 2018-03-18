@@ -13,9 +13,10 @@ import { ReglamentosComponent } from "./components/reglamentos/reglamentos.compo
 import { SeleccionNacionalComponent } from "./components/seleccion-nacional/seleccion-nacional.component";
 import { SponsorsComponent } from "./components/sponsors/sponsors.component";
 import { ContactoComponent } from "./components/contacto/contacto.component";
-import {BhComponent} from "./components/certificaciones/bh/bh.component";
-import {IpoComponent} from "./components/certificaciones/ipo/ipo.component";
-import {MondioringComponent} from "./components/certificaciones/mondioring/mondioring.component";
+import { BhComponent } from "./components/certificaciones/bh/bh.component";
+import { IpoComponent } from "./components/certificaciones/ipo/ipo.component";
+import { MondioringComponent } from "./components/certificaciones/mondioring/mondioring.component";
+import { FigurantesComponent } from "app/components/figurantes/figurantes.component";
 
 
 
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
   { path: 'bh', component: BhComponent },
   { path: 'ipo', component: IpoComponent },
   { path: 'mondioring', component: MondioringComponent },
+  { path: 'figurantes', component: FigurantesComponent },
   { path: '**', pathMatch: 'full', redirectTo: '/' }
 
 ];

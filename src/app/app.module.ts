@@ -32,6 +32,7 @@ import { FcaComponent } from './components/reglamentos/fca/fca.component';
 import { SelectivosMundialesComponent } from './components/reglamentos/selectivos-mundiales/selectivos-mundiales.component';
 import { TrabajoComponent } from './components/reglamentos/trabajo/trabajo.component';
 import { RankingComponent } from './components/reglamentos/ranking/ranking.component';
+import { FigurantesComponent } from './components/figurantes/figurantes.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { RankingComponent } from './components/reglamentos/ranking/ranking.compo
     FcaComponent,
     SelectivosMundialesComponent,
     TrabajoComponent,
-    RankingComponent
+    RankingComponent,
+    FigurantesComponent
   ],
   imports: [
     AgmCoreModule.forRoot({
