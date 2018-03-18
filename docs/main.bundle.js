@@ -33,6 +33,7 @@ webpackEmptyContext.id = "../../../../../src async recursive";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_certificaciones_bh_bh_component__ = __webpack_require__("../../../../../src/app/components/certificaciones/bh/bh.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_certificaciones_ipo_ipo_component__ = __webpack_require__("../../../../../src/app/components/certificaciones/ipo/ipo.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_certificaciones_mondioring_mondioring_component__ = __webpack_require__("../../../../../src/app/components/certificaciones/mondioring/mondioring.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_app_components_figurantes_figurantes_component__ = __webpack_require__("../../../../../src/app/components/figurantes/figurantes.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -43,6 +44,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 // Components
+
 
 
 
@@ -72,6 +74,7 @@ var appRoutes = [
     { path: 'bh', component: __WEBPACK_IMPORTED_MODULE_13__components_certificaciones_bh_bh_component__["a" /* BhComponent */] },
     { path: 'ipo', component: __WEBPACK_IMPORTED_MODULE_14__components_certificaciones_ipo_ipo_component__["a" /* IpoComponent */] },
     { path: 'mondioring', component: __WEBPACK_IMPORTED_MODULE_15__components_certificaciones_mondioring_mondioring_component__["a" /* MondioringComponent */] },
+    { path: 'figurantes', component: __WEBPACK_IMPORTED_MODULE_16_app_components_figurantes_figurantes_component__["a" /* FigurantesComponent */] },
     { path: '**', pathMatch: 'full', redirectTo: '/' }
 ];
 var AppRoutingModule = (function () {
@@ -179,6 +182,7 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_reglamentos_selectivos_mundiales_selectivos_mundiales_component__ = __webpack_require__("../../../../../src/app/components/reglamentos/selectivos-mundiales/selectivos-mundiales.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_reglamentos_trabajo_trabajo_component__ = __webpack_require__("../../../../../src/app/components/reglamentos/trabajo/trabajo.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_reglamentos_ranking_ranking_component__ = __webpack_require__("../../../../../src/app/components/reglamentos/ranking/ranking.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_figurantes_figurantes_component__ = __webpack_require__("../../../../../src/app/components/figurantes/figurantes.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -202,6 +206,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 // Imports
+
 
 
 
@@ -246,7 +251,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_24__components_reglamentos_fca_fca_component__["a" /* FcaComponent */],
             __WEBPACK_IMPORTED_MODULE_25__components_reglamentos_selectivos_mundiales_selectivos_mundiales_component__["a" /* SelectivosMundialesComponent */],
             __WEBPACK_IMPORTED_MODULE_26__components_reglamentos_trabajo_trabajo_component__["a" /* TrabajoComponent */],
-            __WEBPACK_IMPORTED_MODULE_27__components_reglamentos_ranking_ranking_component__["a" /* RankingComponent */]
+            __WEBPACK_IMPORTED_MODULE_27__components_reglamentos_ranking_ranking_component__["a" /* RankingComponent */],
+            __WEBPACK_IMPORTED_MODULE_28__components_figurantes_figurantes_component__["a" /* FigurantesComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_19__agm_core__["a" /* AgmCoreModule */].forRoot({
@@ -757,6 +763,67 @@ ExposicionesComponent = __decorate([
 
 /***/ }),
 
+/***/ "../../../../../src/app/components/figurantes/figurantes.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/figurantes/figurantes.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <br>\n  <br>\n  <br>\n  <h1>Figurantes</h1>\n  <br>\n  <div class=\"table-responsive\">\n    <table class=\"table product-table\">\n      <!--Table head-->\n      <thead>\n      <tr>\n        <th>Nombre</th>\n        <th>Especialidad</th>\n      </tr>\n      </thead>\n      <!--/Table head-->\n\n      <!--Table body-->\n      <tbody>\n\n      <!--First row-->\n      <tr>\n        <td>\n          <h5>Juan Manuel Barratines</h5>\n        </td>\n        <td>IPO</td>\n\n      </tr>\n      <!--/First row-->\n\n      <!--Second row-->\n      <tr>\n        <td>\n          <h5>Javier Alvarez</h5>\n        </td>\n        <td>IPO</td>\n\n      </tr>\n      <!--/Second row-->\n\n      <tr>\n        <td>\n          <h5>Ariel Santillan</h5>\n        </td>\n        <td>IPO</td>\n\n      </tr>\n      <tr>\n        <td>\n          <h5>Sebastian Lencisa</h5>\n        </td>\n        <td>IPO</td>\n\n      </tr>\n\n      <tr>\n        <td>\n          <h5>Sebastian Lencisa</h5>\n        </td>\n        <td>MONDIORING</td>\n      </tr>\n\n      <tr>\n        <td>\n          <h5>Juan Facundo Leiva</h5>\n        </td>\n        <td>MONDIORING</td>\n      </tr>\n\n      </tbody>\n      <!--/Table body-->\n    </table>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/figurantes/figurantes.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FigurantesComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FigurantesComponent = (function () {
+    function FigurantesComponent() {
+    }
+    FigurantesComponent.prototype.ngOnInit = function () {
+    };
+    return FigurantesComponent;
+}());
+FigurantesComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-figurantes',
+        template: __webpack_require__("../../../../../src/app/components/figurantes/figurantes.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/figurantes/figurantes.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], FigurantesComponent);
+
+//# sourceMappingURL=figurantes.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/components/header/header.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -778,7 +845,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse bg-inverse\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <a class=\"navbar-brand\" routerLink=\"/\">\n    <i class=\"fa fa-paw\" aria-hidden=\"true\"></i>\n    Club del Ovejero Belga\n  </a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item dropdown\" routerLinkActive=\"active\">\n        <a class=\"nav-link dropdown-toggle\" id=\"nosotrosLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n          Nosotros\n        </a>\n        <div class=\"dropdown-menu item-dropeable\" aria-labelledby=\"nosotrosLink\">\n          <a class=\"nav-link\" routerLink=\"/comision-directiva\">Comision Directiva</a>\n          <a class=\"nav-link\" routerLink=\"/jueces\">Jueces</a>\n        </div>\n      </li>\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" routerLink=\"/reglamentos\">Reglamentos</a>\n      </li>\n      <li class=\"nav-item dropdown\" routerLinkActive=\"active\">\n        <a class=\"nav-link dropdown-toggle\" href=\"\" id=\"exposicionesLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n          Exposiciones\n        </a>\n        <div class=\"dropdown-menu item-dropeable\" aria-labelledby=\"exposicionesLink\">\n          <a class=\"nav-link\" routerLink=\"/exposiciones\">Resultados</a>\n          <a class=\"nav-link\" routerLink=\"/rankings\">Rankings</a>\n        </div>\n      </li>\n      <li class=\"nav-item dropdown\" routerLinkActive=\"active\">\n        <a class=\"nav-link dropdown-toggle\" href=\"\" id=\"certificacionesLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n          Certificaciones\n        </a>\n        <div class=\"dropdown-menu item-dropeable\" aria-labelledby=\"certificacionesLink\">\n          <a class=\"nav-link\" routerLink=\"/certificaciones\">Perros certificados</a>\n          <a class=\"nav-link\" routerLink=\"/bh\">BH</a>\n          <a class=\"nav-link\" routerLink=\"/ipo\">I.P.O</a>\n          <a class=\"nav-link\" routerLink=\"/mondioring\">Mondioring</a>\n        </div>\n      </li>\n    </ul>\n\n    <ul class=\"navbar-nav ml-auto\">\n\n    </ul>\n\n    <ul class=\"navbar-nav ml-auto\">\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" routerLink=\"/afijos\">Afijos</a>\n      </li>\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" routerLink=\"/sponsors\">Sponsors</a>\n      </li>\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" routerLink=\"/contacto\">Contacto</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"https://www.facebook.com/Club-del-Ovejero-Belga-Argentina-195588877665953/\" target=\"_blank\">\n          <i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>\n        </a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"https://www.instagram.com/clubovejerobelgaargentina/\" target=\"_blank\">\n          <i class=\"fa fa-instagram\" aria-hidden=\"true\"></i>\n        </a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"https://twitter.com/BelgaClub\" target=\"_blank\">\n          <i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>\n        </a>\n      </li>\n    </ul>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse bg-inverse\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <a class=\"navbar-brand\" routerLink=\"/\">\n    <i class=\"fa fa-paw\" aria-hidden=\"true\"></i>\n    Club del Ovejero Belga\n  </a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item dropdown\" routerLinkActive=\"active\">\n        <a class=\"nav-link dropdown-toggle\" href=\"\" id=\"nosotrosLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n          Nosotros\n        </a>\n        <div class=\"dropdown-menu item-dropeable\" aria-labelledby=\"nosotrosLink\">\n          <a class=\"nav-link\" routerLink=\"/comision-directiva\">Comision Directiva</a>\n          <a class=\"nav-link\" routerLink=\"/jueces\">Jueces</a>\n          <a class=\"nav-link\" routerLink=\"/figurantes\">Figurantes</a>\n        </div>\n      </li>\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" routerLink=\"/reglamentos\">Reglamentos</a>\n      </li>\n      <li class=\"nav-item dropdown\" routerLinkActive=\"active\">\n        <a class=\"nav-link dropdown-toggle\" href=\"\" id=\"exposicionesLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n          Exposiciones\n        </a>\n        <div class=\"dropdown-menu item-dropeable\" aria-labelledby=\"exposicionesLink\">\n          <a class=\"nav-link\" routerLink=\"/exposiciones\">Resultados</a>\n          <a class=\"nav-link\" routerLink=\"/rankings\">Rankings</a>\n        </div>\n      </li>\n      <li class=\"nav-item dropdown\" routerLinkActive=\"active\">\n        <a class=\"nav-link dropdown-toggle\" href=\"\" id=\"certificacionesLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n          Certificaciones\n        </a>\n        <div class=\"dropdown-menu item-dropeable\" aria-labelledby=\"certificacionesLink\">\n          <a class=\"nav-link\" routerLink=\"/certificaciones\">Perros certificados</a>\n          <a class=\"nav-link\" routerLink=\"/bh\">BH</a>\n          <a class=\"nav-link\" routerLink=\"/ipo\">I.P.O</a>\n          <a class=\"nav-link\" routerLink=\"/mondioring\">Mondioring</a>\n        </div>\n      </li>\n    </ul>\n\n    <ul class=\"navbar-nav ml-auto\">\n\n    </ul>\n\n    <ul class=\"navbar-nav ml-auto\">\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" routerLink=\"/afijos\">Afijos</a>\n      </li>\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" routerLink=\"/sponsors\">Sponsors</a>\n      </li>\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" routerLink=\"/contacto\">Contacto</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"https://www.facebook.com/Club-del-Ovejero-Belga-Argentina-195588877665953/\" target=\"_blank\">\n          <i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>\n        </a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"https://www.instagram.com/clubovejerobelgaargentina/\" target=\"_blank\">\n          <i class=\"fa fa-instagram\" aria-hidden=\"true\"></i>\n        </a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"https://twitter.com/BelgaClub\" target=\"_blank\">\n          <i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>\n        </a>\n      </li>\n    </ul>\n  </div>\n</nav>\n"
 
 /***/ }),
 
@@ -839,7 +906,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\n  <div class=\"row\">\n    <div class=\"offset-2 col-md-8 content-title\">\n      <h1 class=\"home-title\">Club del Ovejero Belga</h1>\n      <h3 class=\"home-subtitle text-nowrap\">Único club argentino de la raza reconocido por FCA - FCI - FMBB</h3>\n    </div>\n  </div>\n\n  <div class=\"row\">\n\n    <div class=\"col-md-6 content-img\">\n      <img src=\"../../../cob/assets/img/cob.jpg\" alt=\"\">\n\n      <hr>\n      <br>\n\n      <div>\n        <h5 style=\"color: #292b2c\">\n          Bienvenidos al sitio del Club del Ovejero Belga\n        </h5>\n      </div>\n    </div>\n\n    <div class=\"col-md-6 content-time-line\">\n      <a\n        class=\"twitter-timeline\"\n        data-lang=\"es\"\n        data-height=\"540\"\n        data-width=\"580\"\n        data-theme=\"light\"\n        href=\"https://twitter.com/BelgaClub?ref_src=twsrc%5Etfw\">\n      </a>\n    </div>\n\n  </div>\n\n</div>\n"
+module.exports = "<div class=\"container\">\n\n  <div class=\"row\">\n    <div class=\"offset-2 col-md-8 content-title\">\n      <h1 class=\"home-title\">Club del Ovejero Belga</h1>\n      <h3 class=\"home-subtitle text-nowrap\">Único club argentino de la raza reconocido por FCA - FCI</h3>\n      <h4 class=\"home-subtitle text-nowrap\">Afiliado a la FMBB</h4>\n    </div>\n  </div>\n\n  <div class=\"row\">\n\n    <div class=\"col-md-6 content-img\">\n      <img src=\"../../../cob/assets/img/cob.jpg\" alt=\"\">\n\n      <hr>\n      <br>\n\n      <div>\n        <h5 style=\"color: #292b2c\">\n          Bienvenidos al sitio del Club del Ovejero Belga\n        </h5>\n      </div>\n    </div>\n\n    <div class=\"col-md-6 content-time-line\">\n      <a\n        class=\"twitter-timeline\"\n        data-lang=\"es\"\n        data-height=\"540\"\n        data-width=\"580\"\n        data-theme=\"light\"\n        href=\"https://twitter.com/BelgaClub?ref_src=twsrc%5Etfw\">\n      </a>\n    </div>\n\n  </div>\n\n</div>\n"
 
 /***/ }),
 
